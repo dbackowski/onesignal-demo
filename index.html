@@ -1,0 +1,22 @@
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "91e56e15-5049-4f98-b331-1a941688d454",
+      autoRegister: false,
+      notifyButton: {
+        enable: true /* Set to false to hide */
+      }
+    }]);
+
+    OneSignal.push(function() {
+      /* These examples are all valid */
+      OneSignal.sendTag("id", "1");
+    });
+  </script>
+  <body>
+    <h1>OneSignal Push Notification Demo</h1>
+  </body>
+</head>
